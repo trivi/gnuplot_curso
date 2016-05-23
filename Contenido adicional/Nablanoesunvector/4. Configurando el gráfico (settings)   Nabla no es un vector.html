@@ -1,0 +1,335 @@
+
+<!-- saved from url=(0070)http://www.nablanoesunvector.org/?q=fisica_libre/ases/gnuplot/comandos -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body class="">﻿﻿
+
+  
+    <title>4. Configurando el gráfico (settings) | Nabla no es un vector</title>
+    
+<link rel="prev" href="http://www.nablanoesunvector.org/?q=fisica_libre/ases/gnuplot/iniciacion">
+
+<link rel="up" href="http://www.nablanoesunvector.org/?q=fisica_libre/gnuplot">
+
+<link rel="next" href="http://www.nablanoesunvector.org/?q=fisica_libre/ases/gnuplot/pintando">
+
+<link rel="shortcut icon" href="http://www.nablanoesunvector.org/files/bluebreeze_favicon.ico" type="image/x-icon">
+    <style type="text/css" media="all">@import "/modules/book/book.css";</style>
+<style type="text/css" media="all">@import "/modules/cck/content.css";</style>
+<style type="text/css" media="all">@import "/modules/cck/fieldgroup.css";</style>
+<style type="text/css" media="all">@import "/modules/drutex/drutex.css";</style>
+<style type="text/css" media="all">@import "/modules/forum/forum.css";</style>
+<style type="text/css" media="all">@import "/modules/node/node.css";</style>
+<style type="text/css" media="all">@import "/modules/system/defaults.css";</style>
+<style type="text/css" media="all">@import "/modules/system/system.css";</style>
+<style type="text/css" media="all">@import "/modules/user/user.css";</style>
+<style type="text/css" media="all">@import "/themes/garland/style.css";</style>
+<style type="text/css" media="all">@import "/files/color/garland-497383e0/style.css";</style>
+        <style type="text/cspage.tpls" media="print">@import "/themes/garland/print.css";</style>
+    <!--[if lt IE 7]>
+    <style type="text/css" media="all">@import "/themes/garland/fix-ie.css";</style>
+    <![endif]-->
+  
+
+<!-- Layout -->
+  
+  <div id="header-region" class="clear-block"></div>
+
+    <div id="wrapper">
+    <div id="container" class="clear-block">
+
+      <div id="header">
+        <div id="logo-floater">
+        <h1><a href="http://www.nablanoesunvector.org/" title=""><img src="./4. Configurando el gráfico (settings)   Nabla no es un vector_files/garland_logo1.gif" alt="" id="logo"><span></span></a></h1>        </div>
+
+                  <ul class="links primary-links"><li class="first menu-1-1-2"><a href="http://www.nablanoesunvector.org/?q=contact" title="Contacta con nosotros" class="menu-1-1-2">Contacto</a></li>
+<li class="last menu-1-2-2"><a href="http://www.nablanoesunvector.org/foros" class="menu-1-2-2">Foros</a></li>
+</ul>                
+      </div> <!-- /header -->
+
+              <div id="sidebar-left" class="sidebar">
+          <div class="block block-theme"><form action="http://www.nablanoesunvector.org/?q=search/node" method="post" id="search-theme-form">
+<div><div id="search" class="container-inline"><div class="form-item">
+ <input type="text" maxlength="128" name="search_theme_form_keys" id="edit-search-theme-form-keys" size="15" value="" title="Introduzca los términos que quiera buscar." class="form-text">
+</div>
+<input type="submit" name="op" id="edit-submit" value="Buscar" class="form-submit">
+<input type="hidden" name="form_id" id="edit-search-theme-form" value="search_theme_form">
+</div>
+</div></form>
+</div>          <div id="block-menu-77" class="clear-block block block-menu">
+
+  <h2>Documentos</h2>
+
+  <div class="content">
+<ul class="menu">
+<li class="leaf"><a href="http://www.nablanoesunvector.org/?q=trabajos" title="Documentos propios y de terceros, de índole física, matemática o relacionados">Artículos</a></li>
+<li class="leaf"><a href="http://www.nablanoesunvector.org/?q=examenes" title="Exámenes y correcciones de las asignaturas de nuestro plan de estudios">Exámenes</a></li>
+<li class="leaf"><a href="http://www.nablanoesunvector.org/?q=libros" title="Valoración de algunos libros de la bibliografía usual de Física">Libros</a></li>
+
+</ul>
+</div>
+</div><div id="block-menu-114" class="clear-block block block-menu">
+
+  <h2>Utilidades</h2>
+
+  <div class="content">
+<ul class="menu">
+<li class="leaf"><a href="http://www.nablanoesunvector.org/?q=programas" title="Software específico, para la física generalmente">Programas</a></li>
+<li class="leaf"><a href="http://www.nablanoesunvector.org/?q=plantillas" title="Plantillas de LaTeX, Gnuplot y otras, para no empezar desde cero">Plantillas</a></li>
+<li class="leaf"><a href="http://www.nablanoesunvector.org/?q=movil" title="Aplicaciones científicas para móviles que incorporan la plataforma Java">Para el móvil</a></li>
+
+</ul>
+</div>
+</div><div id="block-menu-117" class="clear-block block block-menu">
+
+  <h2>Física recreativa</h2>
+
+  <div class="content">
+<ul class="menu">
+<li class="leaf"><a href="http://www.nablanoesunvector.org/?q=fisica_rec" title="Aprende y diviértete experimentando">Experiencias</a></li>
+
+</ul>
+</div>
+</div><div id="block-menu-76" class="clear-block block block-menu">
+
+  <h2>A hombros de una vaca</h2>
+
+  <div class="content">
+<ul class="menu">
+<li class="leaf"><a href="http://www.nablanoesunvector.org/foros" title="Zona de discusión y de mucho entretenimiento">Foros</a></li>
+<li class="leaf"><a href="http://www.nablanoesunvector.org/?q=contact" title="Mándanos tus sugerencias, quejas, ayudas, etc.">Contacto</a></li>
+
+</ul>
+</div>
+</div><div id="block-menu-75" class="clear-block block block-menu">
+
+  <h2>Quiénes somos</h2>
+
+  <div class="content">
+<ul class="menu">
+<li class="leaf"><a href="http://www.nablanoesunvector.org/?q=proyecto" title="Características, motivaciones e intereses del grupo Nablanoesunvector">El proyecto</a></li>
+<li class="leaf"><a href="http://www.nablanoesunvector.org/?q=la_web" title="Características y modo de funcionamiento de la página web">La web</a></li>
+<li class="leaf"><a href="http://www.nablanoesunvector.org/?q=quienes" title="Quién anda detrás de todo esto">Componentes</a></li>
+<li class="leaf"><a href="http://www.nablanoesunvector.org/?q=colaboradores" title="Quién colabora con nosotros">Colaboradores</a></li>
+
+</ul>
+</div>
+</div>        </div>
+      
+      <div id="center"><div id="squeeze"><div class="right-corner"><div class="left-corner">
+          <div class="breadcrumb"><a href="http://www.nablanoesunvector.org/">Principal</a> › <a href="http://www.nablanoesunvector.org/?q=fisica_libre" title="Pautas y consejos para usar software libre en la física">Física y software libre</a> › <a href="http://www.nablanoesunvector.org/?q=fisica_libre/herramientas">Herramientas</a> › <a href="http://www.nablanoesunvector.org/?q=fisica_libre/ases">Póker de ases: Kile, Maxima, Dia y Gnuplot</a> › <a href="http://www.nablanoesunvector.org/?q=fisica_libre/gnuplot">Gnuplot</a></div>          
+                    <h2>4. Configurando el gráfico (settings)</h2>          
+          
+                              ﻿
+<div id="node-213" class="node">
+
+
+
+      <span class="submitted">Mar, 08/07/2008 - 14:24 — <a href="http://www.nablanoesunvector.org/?q=user/1" title="Ver el perfil de usuario.">grupo</a></span>
+  
+  <div class="content">
+    <p>Todas las órdenes que configuran el gráfico (su aspecto) suelen empezar por <i>set</i> o <i>unset</i> y se escriben antes de pintar la gráfica.</p>
+<ul>
+<li><a href="http://www.nablanoesunvector.org/fisica_libre/ases/gnuplot/comandos#1"><b>Puesta a cero de la configuración, desconfiguración.</b></a></li>
+<li><a href="http://www.nablanoesunvector.org/fisica_libre/ases/gnuplot/comandos#2"><b>Rangos de representación de los ejes X, Y y Z (este último en el caso de representación 3D).</b></a></li>
+<li><a href="http://www.nablanoesunvector.org/fisica_libre/ases/gnuplot/comandos#3"><b>Título de la gráfica y etiquetas en los ejes X, Y y Z.</b></a></li>
+<li><a href="http://www.nablanoesunvector.org/fisica_libre/ases/gnuplot/comandos#4"><b>Representación de los ejes cartesianos.</b></a></li>
+<li><a href="http://www.nablanoesunvector.org/fisica_libre/ases/gnuplot/comandos#5"><b>Representando los ejes en escala logarítmica.</b></a></li>
+<li><a href="http://www.nablanoesunvector.org/fisica_libre/ases/gnuplot/comandos#6"><b>Acentos y carácteres latinos.</b></a></li>
+<li><a href="http://www.nablanoesunvector.org/fisica_libre/ases/gnuplot/comandos#7"><b>Leyendas en la gráfica.</b></a></li>
+<li><a href="http://www.nablanoesunvector.org/fisica_libre/ases/gnuplot/comandos#8"><b>Terminal (donde se representa).</b></a></li>
+<li><a href="http://www.nablanoesunvector.org/fisica_libre/ases/gnuplot/comandos#9"><b>Carácteres matemáticos y griegos.</b></a></li>
+<li><a href="http://www.nablanoesunvector.org/fisica_libre/ases/gnuplot/comandos#10"><b>Borrando una determinada configuración.</b></a></li>
+<li><a href="http://www.nablanoesunvector.org/fisica_libre/ases/gnuplot/comandos#11"><b>Modificando el color de fondo de la gráfica.</b></a></li>
+<li><a href="http://www.nablanoesunvector.org/fisica_libre/ases/gnuplot/comandos#12"><b>Creando pausas entre órdenes.</b></a></li>
+<li><a href="http://www.nablanoesunvector.org/fisica_libre/ases/gnuplot/comandos#13"><b>Creando comentarios e ignorando líneas (para archivos con órdenes, plantillas).</b></a></li>
+</ul>
+<p></p><hr><p></p>
+<ul>
+<li><b>Puesta a cero de la configuración, desconfiguración:</b><a title="1" name="1"></a><br>
+<p class="messages">
+	reset
+	</p>
+<p>	Esta orden elimina cualquier configuración previa.
+	</p></li>
+<li><b>Rangos de representación de los ejes X, Y y Z (este último en el caso de representación 3D):</b><a title="2" name="2"></a><br>
+<p class="messages">
+	set xrange [0:1000]
+	</p>
+<p>	Esta orden restringe el rango de representación del eje x entre los valores 0 y 1000. Análogamente para los demás ejes</p>
+<p class="messages">
+	set yrange [1:259]<br>
+	set zrange [-5:3]
+	</p>
+<p>	Para eje Y y Z, respectívamente.
+	</p></li>
+<li><b>Título de la gráfica y etiquetas en los ejes X, Y y Z:</b><a title="3" name="3"></a><br>
+<p class="messages">
+	set title 'Este es el título.'
+	</p>
+<p>	Esta orden escribe el texto que está entre comillas como título de la gráfica. </p>
+<p class="messages">
+	set xlabel 'Este es el eje x.'
+	</p>
+<p>	Esta orden escribe en el eje X el título que está entre comillas, análogamente para los demás ejes</p>
+<p class="messages">
+	set ylabel 'Este es el eje x.'  <br>
+	set zlabel 'Este es el eje x.'
+	</p>
+</li>
+<li><b>Representación de los ejes cartesianos:</b> <a title="4" name="4"></a><br>
+	Si se desea que aparezcan los ejes de coordenadas podemos escribir<p></p>
+<p class="messages">
+	set xzeroaxis
+	</p>
+<p>	Para el eje X. Análogamente para el eje Y se escribe</p>
+<p class="messages">
+	set yzeroaxis
+	</p>
+<p>	Existen opciones para personalizar los ejes pintados con esta orden, dejamos esas opciones para consultarlas en la ayuda del programa, ejecutando dentro del programa:</p>
+<p class="messages">
+	help zeroaxis
+	</p>
+</li>
+<li><b>Representando los ejes en escala logarítmica:</b> <a title="5" name="5"></a><br>
+	Es muy útil esta opción cuando se están realizando los diagramas de bode en el laboratorio de electromagnetismo.<p></p>
+<p class="messages">
+	set logscale x 10
+	</p>
+<p>	Esto representa el eje x en escala logarítmica en base 10. Se puede poner también para el eje Y y Z, cambiando</p>
+<p class="messages">
+	set logscale y/z 2/10
+	</p>
+<p>	donde 2 es la escala logarítmica en base 2 y si no se pone número alguno es el logaritmo neperiano (natural).
+	</p></li>
+<li><b>Acentos y carácteres latinos (no a todo el mundo le funciona):</b> <a title="6" name="6"></a><br>
+	Debido a que el programa está escrito en Inglés, para dotar de los carácteres latinos y acentos a los textos (que de otra forma dan errores) ha de ponerse la siguiente orden (la pondremos la primera de todas)<p></p>
+<p class="messages">
+	set encoding iso_8859_1
+	</p>
+<p>	donde iso_8859_1 es la fuente más utilizada para los carácteres latinos. Si no es el que conviene o en el sistema tiene otro nombre es posible consultar las distintas "fuentes" disponibles ejecutando dentro del programa</p>
+<p class="messages">
+	help set encoding
+	</p>
+<p>	Para añadir un carácter con acento, por ejemplo en la <i>o</i> de neutrón, escribimos</p>
+<p class="messages">
+	set title 'Vida media del neutr\ón'
+	</p>
+</li>
+<li><b>Leyendas en la gráfica:</b> <a title="7" name="7"></a><br>
+	Por defecto, cuando se pinta un gráfica, aparece una leyenda en la esquina superior derecha con un título que podemos configurar en la orden plot, que veremos más adelante. <p></p>
+<p class="messages">
+	set key off
+	</p>
+<p>	Con esta orden se deshabilitan las leyendas. También es posible colocarlas en otro sitio, si es que queremos o estorban. </p>
+<p class="messages">
+	set key top/bottom right/left
+	</p>
+<p>	Según queramos que esté arriba/abajo y a la derecha/izquierda. También podemos colocarla en otros sitios</p>
+<p class="messages">
+	set key below
+	</p>
+<p>	Para ponerlo debajo del eje x (y debajo del título del eje, si es que hay), ó bien</p>
+<p class="messages">
+	set key outside top/bottom
+	</p>
+<p>	para ponerlo fuera de la gráfica, a la izquierda y arriba/abajo.
+	</p></li>
+<li><b>Terminal (donde se representa):</b> <a title="8" name="8"></a><br>
+	Si no especificamos nada, por defecto el terminal escogido es una ventana de consola. Pero es posible escoger como terminal un archivo .png, .jpg, .eps, etc.<br>
+	Para saber de cuales terminales disponemos, los cuales varían de un sistema a otro, ejecutamos dentro del programa <p></p>
+<p class="messages">
+	help set terminal
+	</p>
+<p>	Donde, entre otras cosas, aparecerá una lista de las terminales posibles, aunque muchas pueden fallar si no están bien configuradas en el sistema operativo.<br>
+	En Linux, por defecto está la x11 (ventana consola). De modo que si queremos que salga una imagen en png escribimos</p>
+<p class="messages">
+	set terminal png
+	</p>
+<p>	Y a continuación especificamos el tamaño de la "hoja" y el nombre del archivo en que se guardará</p>
+<p class="messages">
+	set size 2.1,2.1<br>
+	set output 'imagen.png'
+	</p>
+<p>	2.1,2.1 es el tamaño A4, por defecto viene en tamaño 1,1. Y la imagen se guardará en un archivo llamado <i>imagen.png</i> dentro de la carpeta en la que se ejecute el programa.
+	</p></li>
+<li><b>Carácteres matemáticos y griegos:</b> <a title="9" name="9"></a><br>
+	También es posible añadir la opción <i>enhanced</i><a title="enhanced" name="enhanced"></a> que existe en algunos terminales (como "x11" y "postscript eps") y en otros no (como "png" y "jpeg") y que permite escribir superíndices, subíndices y el alfabeto griego, este último solo on "postscript eps".<p></p>
+<p class="messages">
+	set term x11/postscript eps enhanced
+	</p>
+<p>	Entonces en el texto podemos apreciar lo siguiente:</p>
+<table>
+<tbody>
+<tr>
+<th>Código</th>
+<th>Resultado</th>
+</tr>
+<tr>
+<td>a^{2}</td>
+<td>a<sup>2</sup></td>
+</tr>
+<tr>
+<td>a_{2}</td>
+<td>a<sub>2</sub></td>
+</tr>
+<tr>
+<td>{/Symbol a}</td>
+<td>α</td>
+</tr>
+<tr>
+<td>{/Symbol a}_{/Symbol b}^{2}</td>
+<td>α<sub>β</sub><sup>2</sup></td>
+</tr>
+<tr>
+<td>{/Symbol a}_{{/Symbol b}^{2}}</td>
+<td>α<sub>β<sup>2</sup></sub></td>
+</tr>
+</tbody>
+</table>
+<p>	Usualmente usaremos la terminal postscript.
+	</p></li>
+<li><b>Borrando una determinada configuración:</b> <a title="10" name="10"></a><br>
+	Para borrar una determinada configuración se utiliza el comando “unset” antepuesto al nombre del comando de configuración que se desea desconfigurar, por ejemplo, para borrar la configuración del rango en el eje x<p></p>
+<p class="messages">
+	unset xrange
+	</p>
+<p>	De igual manera para todos los demás comandos de configuración, de modo que el comando 	<i>reset</i> que se discutió antes sería un “unset” para todas las configuraciones hechas hasta 	entonces.
+	</p></li>
+<li><b>Modificando el color de fondo de la gráfica (explicación sólo para Linux):</b> <a title="11" name="11"></a><br>
+	Algunos sistemas pueden presentar el fondo de gráfica en gris, para cambiarlo es necesario ejecutar gnuplot en consola con el siguiente modificador:<p></p>
+<p class="messages">
+	gnuplot -bg white
+	</p>
+<p>	Donde pondrá el fondo de gráfica blanco, se pueden especificar muchos más colores, pero este es el más demandado para las prácticas de laboratorio.
+	</p></li>
+<li><b>Creando pausas entre órdenes:</b> <a title="12" name="12"></a><br>
+	Para que el sistema haga una pausa incluimos la orden<p></p>
+<p class="messages">
+	pause 0.5
+	</p>
+<p>	Donde 0.5 es el tiempo en segundos que realiza la pausa, un 0 no realiza pausa y -1, el más útil, no avanza hasta que presionemos “enter”.
+	</p></li>
+<li><b>Creando comentarios e ignorando líneas (para archivos con órdenes, plantillas):</b><a title="13" name="13"></a> <br>
+	Para que una línea se ignore en una serie de comandos hay que poner al principio el símbolo #, de modo que se puede utilizar tanto para realizar un comentario, como para ignorar una orden en concreto.
+	</li>
+</ul>
+<div class="book-navigation"><div class="page-links clear-block"><a href="http://www.nablanoesunvector.org/?q=fisica_libre/ases/gnuplot/iniciacion" class="page-previous" title="Ir a la página anterior">‹ 3. Iniciando gnuplot</a><a href="http://www.nablanoesunvector.org/?q=fisica_libre/gnuplot" class="page-up" title="Ir a la página padre">arriba</a><a href="http://www.nablanoesunvector.org/?q=fisica_libre/ases/gnuplot/pintando" class="page-next" title="Ir a la página siguiente">5. Pintando gráficas en 2D y 3D ›</a></div></div>  </div>
+
+  <div class="clear-block clear">
+    <div class="meta">
+        </div>
+
+      </div>
+
+</div>          <span class="clear"></span>
+                    <div id="footer">Creada por los componentes de <b>Nabla no es un vector</b> | <a>www.nablanoesunvector.org</a>.
+</div>
+      </div></div></div></div> <!-- /.left-corner, /.right-corner, /#squeeze, /#center -->
+
+      
+    </div> <!-- /container -->
+  </div>
+<!-- /layout -->
+
+    
+
+</body></html>

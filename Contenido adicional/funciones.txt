@@ -1,0 +1,22 @@
+      Function            Returns
+      -----------      ------------------------------------------
+      abs(x)            absolute value of x, |x|
+      acos(x)           arc-cosine  of x
+      asin(x)           arc-sine    of x  
+      atan(x)           arc-tangent of x
+      cos(x)            cosine      of x,  x is in radians.
+      cosh(x)           hyperbolic cosine of x, x is in radians
+      erf(x)            error function of x
+      exp(x)            exponential function of x, base e
+      inverf(x)         inverse error function of x
+      invnorm(x)        inverse normal distribution of x
+      log(x)            log of x, base e
+      log10(x)          log of x, base 10
+      norm(x)           normal Gaussian distribution function
+      rand(x)           pseudo-random number generator      
+      sgn(x)            1 if x > 0, -1 if x < 0, 0 if x=0
+      sin(x)            sine      of x, x is in radians
+      sinh(x)           hyperbolic sine of x, x is in radians
+      sqrt(x)           the square root of x
+      tan(x)            tangent of x, x is in radians
+      tanh(x)           hyperbolic tangent of x, x is in radians

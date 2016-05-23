@@ -1,0 +1,315 @@
+
+<!-- saved from url=(0070)http://www.nablanoesunvector.org/?q=fisica_libre/ases/gnuplot/pintando -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body class="">﻿﻿
+
+  
+    <title>5. Pintando gráficas en 2D y 3D | Nabla no es un vector</title>
+    
+<link rel="prev" href="http://www.nablanoesunvector.org/?q=fisica_libre/ases/gnuplot/comandos">
+
+<link rel="up" href="http://www.nablanoesunvector.org/?q=fisica_libre/gnuplot">
+
+<link rel="next" href="http://www.nablanoesunvector.org/?q=fisica_libre/ases/gnuplot/plantillas">
+
+<link rel="shortcut icon" href="http://www.nablanoesunvector.org/files/bluebreeze_favicon.ico" type="image/x-icon">
+    <style type="text/css" media="all">@import "/modules/book/book.css";</style>
+<style type="text/css" media="all">@import "/modules/cck/content.css";</style>
+<style type="text/css" media="all">@import "/modules/cck/fieldgroup.css";</style>
+<style type="text/css" media="all">@import "/modules/drutex/drutex.css";</style>
+<style type="text/css" media="all">@import "/modules/forum/forum.css";</style>
+<style type="text/css" media="all">@import "/modules/node/node.css";</style>
+<style type="text/css" media="all">@import "/modules/system/defaults.css";</style>
+<style type="text/css" media="all">@import "/modules/system/system.css";</style>
+<style type="text/css" media="all">@import "/modules/user/user.css";</style>
+<style type="text/css" media="all">@import "/themes/garland/style.css";</style>
+<style type="text/css" media="all">@import "/files/color/garland-497383e0/style.css";</style>
+        <style type="text/cspage.tpls" media="print">@import "/themes/garland/print.css";</style>
+    <!--[if lt IE 7]>
+    <style type="text/css" media="all">@import "/themes/garland/fix-ie.css";</style>
+    <![endif]-->
+  
+
+<!-- Layout -->
+  
+  <div id="header-region" class="clear-block"></div>
+
+    <div id="wrapper">
+    <div id="container" class="clear-block">
+
+      <div id="header">
+        <div id="logo-floater">
+        <h1><a href="http://www.nablanoesunvector.org/" title=""><img src="./5. Pintando gráficas en 2D y 3D   Nabla no es un vector_files/garland_logo1.gif" alt="" id="logo"><span></span></a></h1>        </div>
+
+                  <ul class="links primary-links"><li class="first menu-1-1-2"><a href="http://www.nablanoesunvector.org/?q=contact" title="Contacta con nosotros" class="menu-1-1-2">Contacto</a></li>
+<li class="last menu-1-2-2"><a href="http://www.nablanoesunvector.org/foros" class="menu-1-2-2">Foros</a></li>
+</ul>                
+      </div> <!-- /header -->
+
+              <div id="sidebar-left" class="sidebar">
+          <div class="block block-theme"><form action="http://www.nablanoesunvector.org/?q=search/node" method="post" id="search-theme-form">
+<div><div id="search" class="container-inline"><div class="form-item">
+ <input type="text" maxlength="128" name="search_theme_form_keys" id="edit-search-theme-form-keys" size="15" value="" title="Introduzca los términos que quiera buscar." class="form-text">
+</div>
+<input type="submit" name="op" id="edit-submit" value="Buscar" class="form-submit">
+<input type="hidden" name="form_id" id="edit-search-theme-form" value="search_theme_form">
+</div>
+</div></form>
+</div>          <div id="block-menu-77" class="clear-block block block-menu">
+
+  <h2>Documentos</h2>
+
+  <div class="content">
+<ul class="menu">
+<li class="leaf"><a href="http://www.nablanoesunvector.org/?q=trabajos" title="Documentos propios y de terceros, de índole física, matemática o relacionados">Artículos</a></li>
+<li class="leaf"><a href="http://www.nablanoesunvector.org/?q=examenes" title="Exámenes y correcciones de las asignaturas de nuestro plan de estudios">Exámenes</a></li>
+<li class="leaf"><a href="http://www.nablanoesunvector.org/?q=libros" title="Valoración de algunos libros de la bibliografía usual de Física">Libros</a></li>
+
+</ul>
+</div>
+</div><div id="block-menu-114" class="clear-block block block-menu">
+
+  <h2>Utilidades</h2>
+
+  <div class="content">
+<ul class="menu">
+<li class="leaf"><a href="http://www.nablanoesunvector.org/?q=programas" title="Software específico, para la física generalmente">Programas</a></li>
+<li class="leaf"><a href="http://www.nablanoesunvector.org/?q=plantillas" title="Plantillas de LaTeX, Gnuplot y otras, para no empezar desde cero">Plantillas</a></li>
+<li class="leaf"><a href="http://www.nablanoesunvector.org/?q=movil" title="Aplicaciones científicas para móviles que incorporan la plataforma Java">Para el móvil</a></li>
+
+</ul>
+</div>
+</div><div id="block-menu-117" class="clear-block block block-menu">
+
+  <h2>Física recreativa</h2>
+
+  <div class="content">
+<ul class="menu">
+<li class="leaf"><a href="http://www.nablanoesunvector.org/?q=fisica_rec" title="Aprende y diviértete experimentando">Experiencias</a></li>
+
+</ul>
+</div>
+</div><div id="block-menu-76" class="clear-block block block-menu">
+
+  <h2>A hombros de una vaca</h2>
+
+  <div class="content">
+<ul class="menu">
+<li class="leaf"><a href="http://www.nablanoesunvector.org/foros" title="Zona de discusión y de mucho entretenimiento">Foros</a></li>
+<li class="leaf"><a href="http://www.nablanoesunvector.org/?q=contact" title="Mándanos tus sugerencias, quejas, ayudas, etc.">Contacto</a></li>
+
+</ul>
+</div>
+</div><div id="block-menu-75" class="clear-block block block-menu">
+
+  <h2>Quiénes somos</h2>
+
+  <div class="content">
+<ul class="menu">
+<li class="leaf"><a href="http://www.nablanoesunvector.org/?q=proyecto" title="Características, motivaciones e intereses del grupo Nablanoesunvector">El proyecto</a></li>
+<li class="leaf"><a href="http://www.nablanoesunvector.org/?q=la_web" title="Características y modo de funcionamiento de la página web">La web</a></li>
+<li class="leaf"><a href="http://www.nablanoesunvector.org/?q=quienes" title="Quién anda detrás de todo esto">Componentes</a></li>
+<li class="leaf"><a href="http://www.nablanoesunvector.org/?q=colaboradores" title="Quién colabora con nosotros">Colaboradores</a></li>
+
+</ul>
+</div>
+</div>        </div>
+      
+      <div id="center"><div id="squeeze"><div class="right-corner"><div class="left-corner">
+          <div class="breadcrumb"><a href="http://www.nablanoesunvector.org/">Principal</a> › <a href="http://www.nablanoesunvector.org/?q=fisica_libre" title="Pautas y consejos para usar software libre en la física">Física y software libre</a> › <a href="http://www.nablanoesunvector.org/?q=fisica_libre/herramientas">Herramientas</a> › <a href="http://www.nablanoesunvector.org/?q=fisica_libre/ases">Póker de ases: Kile, Maxima, Dia y Gnuplot</a> › <a href="http://www.nablanoesunvector.org/?q=fisica_libre/gnuplot">Gnuplot</a></div>          
+                    <h2>5. Pintando gráficas en 2D y 3D</h2>          
+          
+                              ﻿
+<div id="node-214" class="node">
+
+
+
+      <span class="submitted">Jue, 10/07/2008 - 15:44 — <a href="http://www.nablanoesunvector.org/?q=user/1" title="Ver el perfil de usuario.">grupo</a></span>
+  
+  <div class="content">
+    <p>Como se comentó en la <a href="http://www.nablanoesunvector.org/fisica_libre/ases/gnuplot/introduccion" title="Introducción">introducción</a>, con gnuplot podemos representar gráficas de funciones o representar un archivo de datos, tanto en 2D como en 3D, con muchísimas opciones de las cuales comentaremos algunas.</p>
+<ul>
+<li><a href="http://www.nablanoesunvector.org/fisica_libre/ases/gnuplot/pintando#1"><b>Pintar una función implícita</b></a></li>
+<li><a href="http://www.nablanoesunvector.org/fisica_libre/ases/gnuplot/pintando#2"><b>Definir tu propia función</b></a></li>
+<li><a href="http://www.nablanoesunvector.org/fisica_libre/ases/gnuplot/pintando#3"><b>Pintar más de una función en la misma gráfica</b></a></li>
+<li><a href="http://www.nablanoesunvector.org/fisica_libre/ases/gnuplot/pintando#4"><b>Representar los datos de un archivo</b></a></li>
+<li><a href="http://www.nablanoesunvector.org/fisica_libre/ases/gnuplot/pintando#5"><b>Pintar una lista de datos por consola</b></a></li>
+<li><a href="http://www.nablanoesunvector.org/fisica_libre/ases/gnuplot/pintando#6"><b>Especificar leyendas</b></a></li>
+<li><a href="http://www.nablanoesunvector.org/fisica_libre/ases/gnuplot/pintando#7"><b>Especificar estilo de representación (puntos, líneas, impulsos, barras, etc)</b></a></li>
+<li><a href="http://www.nablanoesunvector.org/fisica_libre/ases/gnuplot/pintando#8"><b>Color y forma de los puntos</b></a></li>
+<li><a href="http://www.nablanoesunvector.org/fisica_libre/ases/gnuplot/pintando#9"><b>Particularidades en la representación 3D</b></a></li>
+<li><a href="http://www.nablanoesunvector.org/fisica_libre/ases/gnuplot/pintando#10"><b>Replot</b></a></li>
+<li><a href="http://www.nablanoesunvector.org/fisica_libre/ases/gnuplot/pintando#11"><b>Ajuste de funciones</b></a></li>
+</ul>
+<p>
+</p><hr><p></p>
+<h6><b>Gráficas 2D.</b></h6>
+<ul>
+<li><b> Pintar una función implícita (como las que traen las calculadoras), por ejemplo el 	arcoseno(x): </b><a title="1" name="1"></a><br>
+<p class="messages">
+	plot acos(x)
+	</p>
+<p>	Incluye todas las funciones implícitas de uso común: trigonométricas (sin,cos,tan), hiperbólicas (sinh,cosh,tanh), logarítmicas (log,log10), exponencial (exp). Y las que no son de tan uso común pero pueden ser de utilidad a los físicos (funciones error, bessel, gamma, etc). Para ver el catálogo completo y sus especificaciones consultar la ayuda, dentro del programa ejecutar</p>
+<p class="messages">
+	help functions
+	</p>
+</li>
+<li><b> Definir tu propia función: </b><a title="2" name="2"></a><br>
+	se pueden definir constantes y funciones<p></p>
+<p class="messages">
+	a=1<br>
+	g(x)=a*x**2+x**3+sin(x)
+	</p>
+<p>	Esta orden define la constante <i>a=1</i> y la función <i>g(x)=a*x^{2}+x^{3}+sin(x)</i>. Se pueden definir tantas funciones y constantes como se deseen.<br>
+	Por otra parte para una función definida a trozos se usa la estructura:</p>
+<p class="messages">
+	y(x)=(x&gt;=1) ? x : x**2
+	</p>
+<p>	Donde ha de leerse que si X es mayor o igual que la unidad entonces escribir la función x, en otro caso escribir la función x<sup>2</sup>, este es el resultado</p></li>
+<p>	<img src="./5. Pintando gráficas en 2D y 3D   Nabla no es un vector_files/pintando1.png" alt="Función a trozos." height="480" width="640"><br type="_moz"><br>
+<br></p>
+<li><b> Pintar más de una función en la misma gráfica: </b><a title="3" name="3"></a><br>
+	basta con separar cada función con comas<p></p>
+<p class="messages">
+	plot sin(x), cos(x)
+	</p>
+<p>	Esta orden pintará en la misma gráfica el seno y el coseno, con diferentes <a href="http://www.nablanoesunvector.org/fisica_libre/ases/gnuplot/pintando#leyenda" title="Leyendas">leyendas</a>.
+	</p></li>
+<p>	<img src="./5. Pintando gráficas en 2D y 3D   Nabla no es un vector_files/pintando2.png" alt="Dos funciones." height="480" width="640"><br type="_moz"><br>
+<br></p>
+<li><b> Representar los datos de un archivo: </b><a title="4" name="4"></a><br>
+<p class="messages">
+	plot 'datos.dat'
+	</p>
+<p>	La extensión .dat es arbitraria y la consola debe estar situada en el fichero donde esté el archivo.<br>
+	Si el archivo de datos solo tiene una columna representará cada dato frente a su cardinal (primer dato para x=1, segundo dato para x=2, etc).<br>
+	Si el archivo tiene dos columnas se representará la primera columna como la X y la segunda como la Y, sin embargo se puede especificar al revés:</p>
+<p class="messages">
+	plot 'datos.dat' u 2:1
+	</p>
+<p>	Donde <i>u 2:1</i> es la abreviatura de <i>usando columna 2 para la X y columna 1 para la Y</i>.<br>
+	Se puede jugar con este comando de infinidad de maneras, en especial vamos a especificar una construcción que usamos para que de un archivo con cuatro columnas <br>
+	X, Y, ΔX, ΔY<br>
+	obtengamos un gráfico con barras de error y cajas de error</p>
+<p class="messages">
+	plot 'datos.dat' u 1:2:3:4 w boxxyerr, 'datos.dat' u 1:2:3:4 w xyerr
+	</p>
+<p>	La primera parte <i>u 1:2:3:4 w boxxyerr</i> pinta las cajas de error (cajas centradas sobre los 	puntos X,Y con lados 2*\Delta X y 2*\Delta Y) y la segunda parte <i>u 1:2:3:4 w xyerr</i> pinta las barras de errores. No entraremos en más discusión ya que las posibilidades son inmensas y esta es la configuración estándar para representar los datos del laboratorio.
+	</p></li>
+<p>	<img src="./5. Pintando gráficas en 2D y 3D   Nabla no es un vector_files/pintando3.png" alt="Barras y cajas de errores." height="480" width="640"><br type="_moz"><br>
+<br></p>
+<li><b> Pintar una lista de datos por consola: </b><a title="5" name="5"></a><br>
+	esta opción no es muy útil por sí sola, pero nos servirá para crear animaciones. Si ingresamos<p></p>
+<p class="messages">
+	plot '-'
+	</p>
+<p>	espera una lista de datos X Y (si solo introducimos un valor por línea, representa el valor frente a los cardinales, análogo al caso ANTERIOR).</p>
+<p class="messages">
+	1 2<br>
+	2 3<br>
+	3 4.5<br>
+	e
+	</p>
+<p>	para terminar la lista hay que introducir <i>e</i> (end).
+	</p></li>
+<p>	<img src="./5. Pintando gráficas en 2D y 3D   Nabla no es un vector_files/pintando4.png" alt="Consola." height="480" width="640"><br type="_moz"><br>
+<br></p>
+<li><b> Especificar leyendas:</b><a title="leyenda" name="leyenda"></a><a title="6" name="6"></a><br>
+	para especificar las leyendas de una lista de datos usamos <i>title 'titulo'</i> o <i>notitle</i> de la siguiente manera<p></p>
+<p class="messages">
+	plot 'datos1.dat' u 1:2 title 'datos1',  'datos2.dat' u 1:2 notitle
+	</p>
+<p>	Donde se pintará <i>datos1.dat</i> con la leyenda <i>datos1</i> y se pintará <i>datos2.dat</i> sin leyenda.
+	</p></li>
+<li><b> Especificar estilo de representación (puntos, líneas, impulsos, barras, etc): </b><a title="7" name="7"></a><br>
+	para especificar si unimos los puntos con líneas o los dejamos como puntos, puntos 	minúsculos, color de los puntos, etc<p></p>
+<p class="messages">
+	plot 'datos1.dat' u 1:2 w p
+	</p>
+<p>	Donde se pintará <i>datos1.dat with points</i>, con puntos. Entre otras opciones podemos 	especificar</p>
+
+
+Código
+Resultado
+
+
+w l
+sólo con líneas
+
+
+w lp
+con puntos unidos por líneas
+
+
+w dots
+con puntos muy pequeños
+
+
+w i
+con impulsos, líneas de altura el valor determinado
+
+
+w boxes
+con barras (como un histograma), donde una tercera columna (<i>u 1:2:3</i> o ingresando tres valores en <i>plot '-'</i>)indica la anchura de la barra (centrada sobre el valor X).
+
+
+</li>
+<p>	<img src="./5. Pintando gráficas en 2D y 3D   Nabla no es un vector_files/pintando5.png" alt="Barras." height="480" width="640"><br type="_moz"><br>
+<br></p>
+<li><b> Color y forma de los puntos: </b><a title="8" name="8"></a><br>
+	un número tras el estilo indica un color y forma distinto, así si no se pone nada<p></p>
+<p class="messages">
+	plot 'datos1.dat' u 1:2 w p, 'datos2.dat' u 1:2 w p
+	</p>
+<p>	pinta los puntos de la primera con cruces <i>+</i> rojas y la segunda con cruces <i>x</i> verdes, pero</p>
+<p class="messages">
+	plot 'datos1.dat' u 1:2 w p 0, 'datos1.dat' u 1:2 w p 5
+	</p>
+<p>	pinta la primera <i>w p 0</i> con puntitos negros y la segunda <i>w p 5</i> con cuadraditos 	turquesas, podéis probar distintos números.
+	</p></li>
+</ul>
+<h6><b>Gráficas 3D.</b><a title="9" name="9"></a></h6>
+<p>Todo lo antedicho es válido para tres dimensiones pero con tres diferencias fundamentales:</p>
+<ol>
+<li>En vez del comando <i>plot</i> escribimos <i>splot</i>.</li>
+<li>Ahora las funciones pueden depender de X e Y, f(x,y).</li>
+<li>Las columnas de datos deben ser tres (el estilo boxes no se utiliza en 3D).</li>
+</ol>
+<p></p><hr><p></p>
+<ul>
+<li> El comando <i>replot</i><a title="10" name="10"></a> es especialmente útil cuando queremos ver por consola el resultado de una gráfica y después meterlo en un archivo. En la sección de <a href="http://www.nablanoesunvector.org/fisica_libre/ases/gnuplot/plantillas#replot" title="Leyendas">plantillas</a> se explicará como usarlo.
+	</li>
+<li><b> Ajustes de funciones: </b><a title="11" name="11"></a><br>
+	Gnuplot te permite ajustar una determinada función que propones a los datos que le ofreces, dándote un margen de error. La manera de hacerlo es la siguiente, en el caso de un ajuste lineal<p></p>
+<p class="messages">
+	y(x)=a*x+b<br>
+	fit y(x) 'datos1.dat' u 1:2 via a,b<br>
+	plot 'datos1.dat' u 1:2 title 'datos' , y(x) title 'ajuste'
+	</p>
+<p>	Donde y(x) es la función, cualquiera, que propones como ajuste (tened cuidado de no definir las constantes) y la segunda línea es el comando que lleva a cabo el ajuste <i>ajustar 'datos1.dat' usando la columna 1 para la X y la columna 2 para la Y tomando como parámetros del ajuste las constante a y b</i>.<br>
+	Cuando se ejecute saldrán los valores de a y b con sus respectivos errores en la consola.<br>
+	<img src="./5. Pintando gráficas en 2D y 3D   Nabla no es un vector_files/pintando6.png" alt="Ajuste en consola." height="480" width="640"><br type="_moz"><br>
+	También hemos pintado la función y(x), el ajuste, para que aparezca en la gráfica.</p></li>
+<p>	<img src="./5. Pintando gráficas en 2D y 3D   Nabla no es un vector_files/pintando7.png" alt="Ajuste pintado." height="480" width="640"><br type="_moz"><br>
+<br></p>
+</ul>
+<div class="book-navigation"><div class="page-links clear-block"><a href="http://www.nablanoesunvector.org/?q=fisica_libre/ases/gnuplot/comandos" class="page-previous" title="Ir a la página anterior">‹ 4. Configurando el gráfico (settings)</a><a href="http://www.nablanoesunvector.org/?q=fisica_libre/gnuplot" class="page-up" title="Ir a la página padre">arriba</a><a href="http://www.nablanoesunvector.org/?q=fisica_libre/ases/gnuplot/plantillas" class="page-next" title="Ir a la página siguiente">6. La plantilla: esa gran amiga ›</a></div></div>  </div>
+
+  <div class="clear-block clear">
+    <div class="meta">
+        </div>
+
+      </div>
+
+</div>          <span class="clear"></span>
+                    <div id="footer">Creada por los componentes de <b>Nabla no es un vector</b> | <a>www.nablanoesunvector.org</a>.
+</div>
+      </div></div></div></div> <!-- /.left-corner, /.right-corner, /#squeeze, /#center -->
+
+      
+    </div> <!-- /container -->
+  </div>
+<!-- /layout -->
+
+    
+
+</body></html>

@@ -1,0 +1,185 @@
+
+<!-- saved from url=(0073)http://www.nablanoesunvector.org/?q=fisica_libre/ases/gnuplot/animaciones -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body class="">﻿﻿
+
+  
+    <title>7. Creando animaciones | Nabla no es un vector</title>
+    
+<link rel="prev" href="http://www.nablanoesunvector.org/?q=fisica_libre/ases/gnuplot/plantillas">
+
+<link rel="up" href="http://www.nablanoesunvector.org/?q=fisica_libre/gnuplot">
+
+<link rel="next" href="http://www.nablanoesunvector.org/?q=fisica_libre/ases/gnuplot/ayuda_programa">
+
+<link rel="shortcut icon" href="http://www.nablanoesunvector.org/files/bluebreeze_favicon.ico" type="image/x-icon">
+    <style type="text/css" media="all">@import "/modules/book/book.css";</style>
+<style type="text/css" media="all">@import "/modules/cck/content.css";</style>
+<style type="text/css" media="all">@import "/modules/cck/fieldgroup.css";</style>
+<style type="text/css" media="all">@import "/modules/drutex/drutex.css";</style>
+<style type="text/css" media="all">@import "/modules/forum/forum.css";</style>
+<style type="text/css" media="all">@import "/modules/node/node.css";</style>
+<style type="text/css" media="all">@import "/modules/system/defaults.css";</style>
+<style type="text/css" media="all">@import "/modules/system/system.css";</style>
+<style type="text/css" media="all">@import "/modules/user/user.css";</style>
+<style type="text/css" media="all">@import "/themes/garland/style.css";</style>
+<style type="text/css" media="all">@import "/files/color/garland-497383e0/style.css";</style>
+        <style type="text/cspage.tpls" media="print">@import "/themes/garland/print.css";</style>
+    <!--[if lt IE 7]>
+    <style type="text/css" media="all">@import "/themes/garland/fix-ie.css";</style>
+    <![endif]-->
+  
+
+<!-- Layout -->
+  
+  <div id="header-region" class="clear-block"></div>
+
+    <div id="wrapper">
+    <div id="container" class="clear-block">
+
+      <div id="header">
+        <div id="logo-floater">
+        <h1><a href="http://www.nablanoesunvector.org/" title=""><img src="./7. Creando animaciones   Nabla no es un vector_files/garland_logo1.gif" alt="" id="logo"><span></span></a></h1>        </div>
+
+                  <ul class="links primary-links"><li class="first menu-1-1-2"><a href="http://www.nablanoesunvector.org/?q=contact" title="Contacta con nosotros" class="menu-1-1-2">Contacto</a></li>
+<li class="last menu-1-2-2"><a href="http://www.nablanoesunvector.org/foros" class="menu-1-2-2">Foros</a></li>
+</ul>                
+      </div> <!-- /header -->
+
+              <div id="sidebar-left" class="sidebar">
+          <div class="block block-theme"><form action="http://www.nablanoesunvector.org/?q=search/node" method="post" id="search-theme-form">
+<div><div id="search" class="container-inline"><div class="form-item">
+ <input type="text" maxlength="128" name="search_theme_form_keys" id="edit-search-theme-form-keys" size="15" value="" title="Introduzca los términos que quiera buscar." class="form-text">
+</div>
+<input type="submit" name="op" id="edit-submit" value="Buscar" class="form-submit">
+<input type="hidden" name="form_id" id="edit-search-theme-form" value="search_theme_form">
+</div>
+</div></form>
+</div>          <div id="block-menu-77" class="clear-block block block-menu">
+
+  <h2>Documentos</h2>
+
+  <div class="content">
+<ul class="menu">
+<li class="leaf"><a href="http://www.nablanoesunvector.org/?q=trabajos" title="Documentos propios y de terceros, de índole física, matemática o relacionados">Artículos</a></li>
+<li class="leaf"><a href="http://www.nablanoesunvector.org/?q=examenes" title="Exámenes y correcciones de las asignaturas de nuestro plan de estudios">Exámenes</a></li>
+<li class="leaf"><a href="http://www.nablanoesunvector.org/?q=libros" title="Valoración de algunos libros de la bibliografía usual de Física">Libros</a></li>
+
+</ul>
+</div>
+</div><div id="block-menu-114" class="clear-block block block-menu">
+
+  <h2>Utilidades</h2>
+
+  <div class="content">
+<ul class="menu">
+<li class="leaf"><a href="http://www.nablanoesunvector.org/?q=programas" title="Software específico, para la física generalmente">Programas</a></li>
+<li class="leaf"><a href="http://www.nablanoesunvector.org/?q=plantillas" title="Plantillas de LaTeX, Gnuplot y otras, para no empezar desde cero">Plantillas</a></li>
+<li class="leaf"><a href="http://www.nablanoesunvector.org/?q=movil" title="Aplicaciones científicas para móviles que incorporan la plataforma Java">Para el móvil</a></li>
+
+</ul>
+</div>
+</div><div id="block-menu-117" class="clear-block block block-menu">
+
+  <h2>Física recreativa</h2>
+
+  <div class="content">
+<ul class="menu">
+<li class="leaf"><a href="http://www.nablanoesunvector.org/?q=fisica_rec" title="Aprende y diviértete experimentando">Experiencias</a></li>
+
+</ul>
+</div>
+</div><div id="block-menu-76" class="clear-block block block-menu">
+
+  <h2>A hombros de una vaca</h2>
+
+  <div class="content">
+<ul class="menu">
+<li class="leaf"><a href="http://www.nablanoesunvector.org/foros" title="Zona de discusión y de mucho entretenimiento">Foros</a></li>
+<li class="leaf"><a href="http://www.nablanoesunvector.org/?q=contact" title="Mándanos tus sugerencias, quejas, ayudas, etc.">Contacto</a></li>
+
+</ul>
+</div>
+</div><div id="block-menu-75" class="clear-block block block-menu">
+
+  <h2>Quiénes somos</h2>
+
+  <div class="content">
+<ul class="menu">
+<li class="leaf"><a href="http://www.nablanoesunvector.org/?q=proyecto" title="Características, motivaciones e intereses del grupo Nablanoesunvector">El proyecto</a></li>
+<li class="leaf"><a href="http://www.nablanoesunvector.org/?q=la_web" title="Características y modo de funcionamiento de la página web">La web</a></li>
+<li class="leaf"><a href="http://www.nablanoesunvector.org/?q=quienes" title="Quién anda detrás de todo esto">Componentes</a></li>
+<li class="leaf"><a href="http://www.nablanoesunvector.org/?q=colaboradores" title="Quién colabora con nosotros">Colaboradores</a></li>
+
+</ul>
+</div>
+</div>        </div>
+      
+      <div id="center"><div id="squeeze"><div class="right-corner"><div class="left-corner">
+          <div class="breadcrumb"><a href="http://www.nablanoesunvector.org/">Principal</a> › <a href="http://www.nablanoesunvector.org/?q=fisica_libre" title="Pautas y consejos para usar software libre en la física">Física y software libre</a> › <a href="http://www.nablanoesunvector.org/?q=fisica_libre/herramientas">Herramientas</a> › <a href="http://www.nablanoesunvector.org/?q=fisica_libre/ases">Póker de ases: Kile, Maxima, Dia y Gnuplot</a> › <a href="http://www.nablanoesunvector.org/?q=fisica_libre/gnuplot">Gnuplot</a></div>          
+                    <h2>7. Creando animaciones</h2>          
+          
+                              ﻿
+<div id="node-216" class="node">
+
+
+
+      <span class="submitted">Jue, 10/07/2008 - 17:06 — <a href="http://www.nablanoesunvector.org/?q=user/1" title="Ver el perfil de usuario.">grupo</a></span>
+  
+  <div class="content">
+    <p>Para crear animaciones vamos a hacer uso de la representación de datos y de los comandos <i>plot '-'</i> y <i>pause</i>.<br><br>
+La idea es la siguiente: con un binario hecho en un lenguaje de programación (por ejemplo Fortran o C) escribimos en un fichero la cabecera del documento con los <i>settings</i> (configuraciones) que queramos. Uno puede ser:</p>
+<p class="messages">
+reset <br><br>
+set encoding iso_8859_1<br><br>
+set title 'Animaci\ón.'<br><br>
+set xlabel 'x' <br><br>
+set ylabel 'y' <br><br>
+set xrange [0:10] <br><br>
+set yrange [0:10]<br><br>
+set sample 5000 <br>
+</p>
+<p>Seguidamente escribiremos en un bucle con tantos <i>fotogramas</i> como se necesite:</p>
+<p class="messages">
+splot '-' w l title 'datos'<br><br>
+<i>la lista de datos (tres columnas, XYZ, en el caso de splot y dos columnas, XY, en el caso de plot)</i><br><br>
+e<br><br>
+pause 0.05<br>
+</p>
+<p>Donde cada tanda es un fotograma de la animación. Entre plot y plot se produce una pausa dada por el comando <i>pause</i>.</p>
+<ul>
+<li>Si queremos pintar dos <i>trayectorias</i> animadas distintas en el mismo gráfico (con distintos colores), tan solo tenemos que escribir<br>
+<p class="messages">
+splot '-' w l title 'datos1', '-' w l title 'datos2'<br><br>
+<i>lista de datos 1</i><br><br>
+e<br><br>
+<i>lista de datos 2</i><br><br>
+e<br><br>
+pause 0.05<br>
+</p>
+<p>Se pueden añadir tantas trayectorias como sean necesarias.
+</p></li>
+<li> Para dibujar una trayectoria poco a poco (y no solo un punto) debemos usar el programa para que vaya acumulando los datos en la lista (en el fotograma 1 solo habrá un punto, en el fotograma 2 estará el primer punto y el siguiente, en el tercero estarán los dos anteriores y el nuevo, etc).
+</li>
+<li>Un posible problema es que si no especificamos rango, en la X y la Y, se ajusta solo en función de los datos que tenga la lista.</li>
+<li>Una ayuda puede ser, en el caso de representación 3D, poner el primer <i>pause</i> a -1, de forma que puedes orientar la gráfica como quieras en el primer fotograma y después presionar enter sobre la consola para que ocurra la animación.</li>
+<div class="book-navigation"><div class="page-links clear-block"><a href="http://www.nablanoesunvector.org/?q=fisica_libre/ases/gnuplot/plantillas" class="page-previous" title="Ir a la página anterior">‹ 6. La plantilla: esa gran amiga</a><a href="http://www.nablanoesunvector.org/?q=fisica_libre/gnuplot" class="page-up" title="Ir a la página padre">arriba</a><a href="http://www.nablanoesunvector.org/?q=fisica_libre/ases/gnuplot/ayuda_programa" class="page-next" title="Ir a la página siguiente">8. La ayuda del programa ›</a></div></div>  </ul></div>
+
+  <div class="clear-block clear">
+    <div class="meta">
+        </div>
+
+      </div>
+
+</div>          <span class="clear"></span>
+                    <div id="footer">Creada por los componentes de <b>Nabla no es un vector</b> | <a>www.nablanoesunvector.org</a>.
+</div>
+      </div></div></div></div> <!-- /.left-corner, /.right-corner, /#squeeze, /#center -->
+
+      
+    </div> <!-- /container -->
+  </div>
+<!-- /layout -->
+
+    
+
+</body></html>
