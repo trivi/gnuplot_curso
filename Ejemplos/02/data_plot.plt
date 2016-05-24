@@ -20,9 +20,9 @@ plot "data_plot.dat" u 1:2 with p linecolor 2 title "Experiment"
 plot "data_plot.dat" u 1:2 with p linecolor rgb "red" title "Experiment"
 plot "data_plot.dat" u 1:2 with l linecolor rgb "red" title "Experiment"
 plot "data_plot.dat" u 1:2 with l linecolor rgb "red" lw 2 title "Experiment"
-plot "data_plot.dat" u 1:2 with lp pc rgb "blue" linecolor rgb "red" lw 2 title "Experiment"
-plot "data_plot.dat" u 1:2 with lp pt 1 rgb "blue" linecolor rgb "red" lw 2 title "Experiment"
-plot "data_plot.dat" u 1:2 with lp pt 1 linecolor rgb "red" lw 2 title "Experiment"
+plot "data_plot.dat" u 1:2 with lp lc rgb "red" lw 2 title "Experiment"
+plot "data_plot.dat" u 1:2 with lp pt 1 lc rgb "blue" lw 2 title "Experiment"
+plot "data_plot.dat" u 1:2 with lp pt 1 lc rgb "red" lw 2 title "Experiment"
 plot "data_plot.dat" u 1:2 w lp pt 1 lc rgb "red" lw 2 title "Experiment"
 
 #problema puntos
