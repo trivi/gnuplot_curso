@@ -54,7 +54,7 @@ plot cos(x) lt 3 title "cos(x)"
 set size 0.5,0.45
 set origin 0.5,0
 
-plot sin(2*x) lt 4 title "cos(2x)"
+plot cos(2*x) lt 4 title "cos(2x)"
 
 
 #Deshabilitamos la opción para multiplot

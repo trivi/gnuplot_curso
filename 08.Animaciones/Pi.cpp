@@ -73,6 +73,9 @@ int main () {
 		}
 		//Cerramos la petición de datos con "e"
 		myfile << "e" << endl << endl;
+		
+		//Rastreo del punto por el que va
+		cout << i << endl;
 				
 		
 	}

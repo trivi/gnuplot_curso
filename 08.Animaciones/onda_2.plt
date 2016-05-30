@@ -2,7 +2,7 @@ reset
 
 #seleccionamos la terminal apropiada para la salida
 set term gif animate delay 10
-set output "onda.gif"
+set output "onda_2.gif"
 
 #Fijamos el rango del gráfico en X e Y
 set xrange[-2*pi:2*pi]
@@ -29,6 +29,7 @@ set isosamples 200
 
 
 #Graficamos los sucesivos fotogramas
-do for [t=0:50] {
-	splot cos(x**2+y**2-t*2*pi/50)/sqrt(1+x**2+y**2)
+puntos=50
+do for [t=0:puntos] {
+	splot cos(x**2+y**2-t*2*pi/puntos)/sqrt(1+x**2+y**2)
 }

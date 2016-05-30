@@ -16,11 +16,11 @@ set multiplot
 unset key
 
 
-# Primero: sin(x)
+# Primero
 
 #Seleccionamos el tamaño a 1/2 de la plantilla (x,y)
 set size 0.5,0.5
-set origin 0,0
+set origin 0,0.5
 
 #Fijamos el rango del gráfico en X e Y
 set xrange[-pi:pi]
@@ -41,11 +41,11 @@ splot cos(x**2+y**2)/sqrt(1+x**2+y**2)
 
 
 
-# Segundo: sin(2x)
+# Segundo
 
 #Seleccionamos el tamaño a 1/2 de la plantilla (x,y)
 set size 0.5,0.5
-set origin 0,0.5
+set origin 0,0
 
 #Añadimos líneas de nivel
 set contour
