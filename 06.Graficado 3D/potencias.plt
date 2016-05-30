@@ -40,6 +40,7 @@ rep
 
 
 #Representamos la proyeccion
+unset key
 set pm3d map
 
 rep
